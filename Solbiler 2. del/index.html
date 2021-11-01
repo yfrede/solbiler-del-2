@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheet/reset.css" rel="stylesheet">
+    <link href="stylesheet/style.css" rel="stylesheet">
+    <link href="stylesheet/cssslideshow.css" rel="stylesheet">
+    <title>Solbiler ApS af Frederik K. Pedersen</title>
+</head>
+
+<body>
+    <!-- Wrapper start -->
+    <div id="wrapper">
+
+        <header class="header">
+            <div class="sidehoved">
+                <h2 id="tekstlogo">Solbiler ApS</h2>
+                <div id="login">
+                    <img id="login-logo" src="billeder/login 2.png" alt="login billede">
+                    <button>Log ind</button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <article>
+
+                <section id="front">
+
+
+                    <form class="formular" id="formular" action="" method="">
+
+                        <h1 class="formular-overskrift">Find din bil uden bøvl!</h1>
+
+                        <div class="formularfelter">
+                            <div>
+                                <label for="afhentning" class="etiket">Afhentning:</label>
+                                <input type="date" id="afhentning" name="afhentning" required>
+                            </div>
+
+                            <div>
+                                <label for="aflevering" class="etiket">Aflevering:</label>
+                                <input type="date" id="aflevering" name="aflevering" required>
+                            </div>
+
+                            <div>
+                                <label for="personer" class="etiket">Antal personer</label>
+                                <input type="number" value="1" id="personer" max="7" min="1">
+                            </div>
+
+                            <div>
+                                <label for="kufferter" class="etiket">Antal kufferter:</label>
+                                <select id="kufferter">
+                                    <option value="0">0 - kun taske</option>
+                                    <option value="1">1 kuffert</option>
+                                    <option value="2">2 kufferter</option>
+                                    <option value="3">3 kufferter</option>
+                                    <option value="4">4 kufferter</option>
+                                </select>
+                            </div>
+
+                            <div class="formular_knap">
+                                <button id="knap" class="knap" type="submit">Søg</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </section>
+                <section class="biler-sektion" id="biler-sektion"></section>
+
+                <!-- Slideshow -->
+                <section>
+                    <h3>Biler vores kunder har lejet af os:</h3>
+                    <div class="slideshow">
+                        <button type="button" id="tilbage">Forrige</button>
+                        <img src="slideshow/billig.png" alt="Slideshow image" id="slidebillede">
+                        <button type="button" id="frem">Næste</button>
+                    </div>
+                </section>
+
+                <template id="skabelon_output">
+                    <div class="biler">
+                        <img class="bil-billeder">
+                        <h2 class="bilm"></h2>
+                        <div class="bilinfo">
+                            <div class="kategori">Kategori: </div>
+                            <div class="antalpersoner">Personer: </div>
+                            <div class="antalkufferter">Kufferter: </div>
+                        </div>
+                        <div class="pris-og-knap">
+                            <h3 class="pris">DKK</h3>
+                            <a href="" class="book-knap"> Tryk her for at leje</a>
+                        </div>
+                    </div>
+                </template>
+            </article>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-tekst">
+                <h3>Solbilers informationssektion</h3>
+                <p>KUNDE SUPPORT<br>
+                    Adresse: Solvej 100, 8260, Viby J<br>
+                    Email: Solbiler@fakemail.com<br>
+                    Tlf: 87 94 14 00<br>
+                </p>
+            </div>
+        </footer>
+
+    </div> <!-- Wrapper slut -->
+
+    <script src="javascript.js"></script>
+    <script src="slideshow.js"></script>
+
+
+</body>
+
+</html>

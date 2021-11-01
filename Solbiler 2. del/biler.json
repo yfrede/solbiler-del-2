@@ -1,0 +1,33 @@
+{
+    "billiste": [{
+
+            "bilmaerke": "Billig bil",
+            "billede": "/billeder/billig.png",
+            "billedtekst": "Billede af Billig bil",
+            "kategori": "Studerende",
+            "personer": "3",
+            "kufferter": "1",
+            "tillaeg": "10"
+        },
+
+        {
+            "bilmaerke": "Mellemklasse bil",
+            "billede": "billeder/overkommelig.png",
+            "billedetekst": "Billede af Mellemklasse bil",
+            "kategori": "Mellemklasse",
+            "personer": "5",
+            "kufferter": "4",
+            "tillaeg": "40"
+        },
+
+        {
+            "bilmaerke": "Dyr bil",
+            "billede": "/billeder/dyr.png",
+            "billedetekst": "Billede af Dyr bil",
+            "kategori": "Luksuriøs",
+            "personer": "2",
+            "kufferter": "2",
+            "tillaeg": "400"
+        }
+    ]
+}

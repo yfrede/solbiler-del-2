@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheet/reset.css" rel="stylesheet">
+    <link href="stylesheet/udstyr-style.css" rel="stylesheet">
+    <link href="stylesheet/header-css.css" rel="stylesheet">
+    <link href="stylesheet/footer-css.css" rel="stylesheet">
+    <title>Ekstra udstyr</title>
+    <!-- CSS til header og footer -->
+
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <header class="header">
+            <div class="sidehoved">
+                <h2 id="tekstlogo">Solbiler ApS</h2>
+                <div id="login">
+                    <img id="login-logo" src="billeder/login 2.png" alt="login billede">
+                    <button>Log ind</button>
+                </div>
+            </div>
+        </header>
+    </div>
+    <main>
+        <article>
+            <div id="main-body">
+                <section id="bilen">
+                    <!-- Biludvalget fra index-siden-->
+                    <div id="bilvalg"></div>
+
+                </section>
+
+                <section id="formularen">
+                    <!-- Checkboxes fra ekstra udstyr -->
+
+                    <h2>Vælg ekstraudstyr (ekskl. moms)</h2>
+                    <!-- Javascriptet bearbejder formularen, men inden den fuldføres så ser den om der er
+                    noget mere, hvilket der er med action, som indikerer at den skal sendes videre til hjemmesiden -->
+                    <form id="formular" action="kundeoplysninger.html">
+                        <input type="checkbox" data-udstyr="Ekstra chauffør" class="udstyr" value="299.95">Ekstra
+                        chauffør kr. 299,95<br>
+                        <input type="checkbox" data-udstyr="Barnesæde (5-12 år)" class="udstyr" value="180.00">Barnesæde
+                        (5-12 år) kr. 180,00<br>
+                        <input type="checkbox" data-udstyr="Vejhjælp+" class="udstyr" value="140.00">Vejhjælp+ kr.
+                        140,00<br>
+                        <input type="checkbox" data-udstyr="Lift-net (0-1 år)" class="udstyr" value="99.95">Lift-net
+                        (0-1 år) kr. 99,95<br>
+                        <input type="checkbox" data-udstyr="Barnesæde (1-4 år)" class="udstyr" value="120.50">Barnesæde
+                        (1-4 år) kr. 120,50<br>
+                        <input type="checkbox" data-udstyr="GPS Navigation" class="udstyr" value="299.95">GPS
+                        Navigation
+                        kr. 299,95<br>
+                        <input type="checkbox" data-udstyr="Snekæder" class="udstyr" value="175.50">Snekæder kr.
+                        175,50<br>
+                        <br>
+                        <button type="submit" id="knaplink"> Videre </button>
+                    </form>
+                </section>
+
+                <section id="total-pris">
+                    <h3>Alt inklusiv</h3>
+                    <div id="total-felt"></div>
+                    <p>inkl. moms</p>
+                </section>
+            </div>
+        </article>
+    </main>
+    <footer class="footer">
+        <div class="footer-tekst">
+            <h3>Solbilers informationssektion</h3>
+            <p>KUNDE SUPPORT<br>
+                Adresse: Solvej 100, 8260, Viby J<br>
+                Email: Solbiler@fakemail.com<br>
+                Tlf: 87 94 14 00<br>
+            </p>
+        </div>
+    </footer>
+
+    <script src="data-fra-index.js"></script>
+</body>
+
+</html>

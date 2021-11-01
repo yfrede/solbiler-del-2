@@ -1,0 +1,26 @@
+:after,
+:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.slideshow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+h3 {
+    font: 12px/18px Arial, sans-serif;
+    text-align: center;
+    font-size: 150%;
+    margin-top: 1.5%;
+    margin-bottom: 1%;
+}
+
+img {
+    max-width: 35%;
+}

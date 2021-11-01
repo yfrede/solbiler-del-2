@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheet/reset.css" rel="stylesheet">
+    <link href="stylesheet/header-css.css" rel="stylesheet">
+    <link href="stylesheet/footer-css.css" rel="stylesheet">
+    <title>Kundeoplysninger</title>
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <header class="header">
+            <div class="sidehoved">
+                <h2 id="tekstlogo">Solbiler ApS</h2>
+                <div id="login">
+                    <img id="login-logo" src="billeder/login 2.png" alt="login billede">
+                    <button>Log ind</button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <article>
+                <section>
+                    <h1>Dine oplysninger</h1>
+                    <!-- Formular-felter indeholder "required" så de skal udfyldes før man kan fortsætte -->
+                    <form id="formular">
+                        <label for="fornavn">Fornavn</label><br>
+                        <input type="text" id="fornavn" placeholder="Indtast dit fornavn" required><br>
+
+                        <label for="efternavn">Efternavn</label><br>
+                        <input type="text" id="efternavn" placeholder="Indtast dit navn" required><br>
+
+                        <label for="adresse">Adresse</label><br>
+                        <input type="text" id="adresse" placeholder="Indtast din adresse" required><br>
+
+                        <label for="postnr">Post Nr.</label><br>
+                        <input type="number" id="postnr" placeholder="Post nr." required><br>
+
+                        <label for="bynavn">Bynavn</label><br>
+                        <input type="text" id="bynavn" placeholder="Bynavn" required><br>
+
+                        <input type="checkbox" class="gyldig" value="" required>Jeg er fyldt 18 år
+
+                        <button type="submit">Videre</button>
+                    </form>
+                </section>
+
+                <section>
+                    <h2>Lejeoplysninger</h2>
+                    <!-- Output henter data fra tidligere checkbokse ved hjælp af "sessionStorage" & "GET"-->
+                    <div id="output"></div>
+                </section>
+            </article>
+        </main>
+        <footer class="footer">
+            <div class="footer-tekst">
+                <h3>Solbilers informationssektion</h3>
+                <p>KUNDE SUPPORT<br>
+                    Adresse: Solvej 100, 8260, Viby J<br>
+                    Email: Solbiler@fakemail.com<br>
+                    Tlf: 87 94 14 00<br>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="sessionstorage.js"></script>
+</body>
+
+</html>

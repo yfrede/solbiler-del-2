@@ -1,0 +1,31 @@
+fetch("https://api.dataforsyningen.dk/postnumre")
+	.then(function (data) {
+		return data.json();
+})
+
+.then(function (post) {
+	const PBLISTE = document.getElementById("pbliste");
+	for (const postnrogby of post){
+		PBLISTE.insertAdjacentHTML("beforeend", "<option>" + postnrogby.nr + " " + postnrogby.navn + "</option>");
+})
+
+.catch(function (error){
+	const PB = document.getElementById("pb");
+PB.innerHTML = "Postnr og by ikke tilgængelige";
+)}
+//vejnavne--------------------------------------------------------------
+fetch("https://api.dataforsyningen.dk/vejnavne")
+.then(function (data){
+	return data.json();
+})
+.then(function (post){
+	const ADRESSELISTE = document.getElementById("adresseliste");
+	for (const vej of post){
+	ADRESSELISTE.insertAdjacentHTML("beforeend", "<option>" + vej.navn + "</option>");
+	}
+})
+
+.catch(function(error){
+	const ADRESSE = document.getElementById("adresse");
+	ADRESSE.innerHTML = "Adresser ikke tilgængelige";
+})

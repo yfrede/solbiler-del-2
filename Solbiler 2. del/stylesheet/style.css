@@ -1,0 +1,395 @@
+/* Eric Meyer's CSS Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End of Eric Meyer's CSS Reset */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+	display: block;
+}
+
+body {
+	font: 12px/18px Arial, sans-serif;
+}
+
+img {
+	width: 100%;
+}
+
+.wrapper {
+	min-width: 200px;
+	max-width: 1000px;
+	margin: auto;
+	display: flex;
+	align-content: center;
+	padding: 1%;
+}
+
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	height: auto;
+	width: 100%;
+	background: #2b5b96;
+}
+
+#tekstlogo {
+	font-family: Helvetica;
+	font-size: 200%;
+	color: white;
+	margin: 0.5%;
+}
+
+.sidehoved {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+#login-logo {
+	width: 25%;
+}
+
+#login {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	margin-left: 83%;
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+#front {
+	display: flex;
+	justify-content: space-between;
+	background-image: url(../billeder/Mustang.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	margin-bottom: 5%;
+	height: 420px;
+}
+
+.biler-sektion {
+	margin-top: 4%;
+}
+
+.bil-oversigt {
+	text-align: center;
+	font-size: 180%;
+	font-weight: bold;
+	margin: 1.5%;
+}
+
+.bil-profil {
+	align-self: center;
+}
+
+.formular {
+	font-family: 'Itim', cursive;
+	color: white;
+	background-color: #2b5b96;
+	position: relative;
+	top: 20px;
+	width: 280px;
+	height: 200px;
+	padding: 1%;
+	margin-left: 39%;
+}
+
+.formular-overskrift {
+	text-align: center;
+	font-weight: bold;
+	font-size: 140%;
+	margin: 1%;
+}
+
+.formularfelter {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.etiket {
+	margin: 15px 0 5px;
+	display: block;
+}
+
+
+.formular_knap {
+	display: flex;
+	text-align: center;
+	width: 80%;
+	margin-top: 25px;
+	margin-left: 3.5rem;
+	align-self: auto;
+
+}
+
+
+#afhentning,
+#aflevering,
+#personer {
+	width: 8rem;
+	padding: 1px;
+	text-align: right;
+	margin: auto;
+}
+
+
+
+#knap {
+	width: 80%
+}
+
+
+.biler {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 75%;
+	padding: 1%;
+	align-items: center;
+	justify-content: space-between;
+	margin: auto;
+	margin-top: 2%;
+	border: 1px solid grey;
+	border-radius: 3px;
+}
+
+.pris-og-knap {
+	display: flex;
+	height: 4rem;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+.pris {
+	margin: 0 auto;
+	font-size: 160%;
+}
+
+.bil-billeder {
+	width: 25%;
+}
+
+.bilm {
+	display: flex;
+	margin: auto;
+	font-size: 180%;
+	font-weight: bold;
+	line-height: 1.2em;
+}
+
+.bil-profil {
+	width: 30%;
+	display: flex;
+	flex-wrap: nowrap;
+	margin: auto;
+}
+
+.bilinfo {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin: auto;
+	font-size: 140%;
+}
+
+
+.book-knap {
+	font-size: 180%;
+	align-self: center;
+	text-decoration: none;
+}
+
+/* video css 
+flexer videoen så den passer ind*/
+#video-layout {
+    display: flex;
+	width: auto;
+    flex-direction: row;
+    margin-top: 50px;
+	margin-right: 50px;
+	
+	height: 200px;
+}
+
+
+
+
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	height: 180px;
+	background: #2b5b96;
+	padding: 1%;
+	align-content: center;
+}
+
+.footer h3 {
+	font-size: 200%;
+	font-weight: 600;
+	align-self: center;
+}
+
+.footer p {
+	display: flex;
+	font-size: 130%;
+	margin-top: 1%;
+	line-height: 1.6rem;
+	align-self: center;
+}
+
+.footer-tekst {
+	display: flex;
+	width: 80%;
+	align-self: center;
+	flex-direction: column;
+	margin: auto;
+}

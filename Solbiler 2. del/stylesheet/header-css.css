@@ -1,0 +1,32 @@
+/* css til header */
+.header {
+
+	font: 12px/18px Arial, sans-serif;
+
+	height: auto;
+	width: 100%;
+	background: #2b5b96;
+}
+
+#tekstlogo {
+	font-family: Helvetica;
+	font-size: 200%;
+	margin: 0.5%;
+}
+
+.sidehoved {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+#login-logo {
+	width: 25%;
+}
+
+#login {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	margin-left: 82%;
+}
